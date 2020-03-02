@@ -182,7 +182,7 @@ const inputNode = getByLabelText('username')
 <!--Cypress-->
 
 ```js
-cy.getByLabelText('username').should('exist')
+cy.findByLabelText('username').should('exist')
 ```
 
 <!--END_DOCUSAURUS_CODE_TABS-->
@@ -246,7 +246,7 @@ const inputNode = getByPlaceholderText('Username')
 <!--Cypress-->
 
 ```js
-cy.getByPlaceholderText('Username').should('exist')
+cy.findByPlaceholderText('Username').should('exist')
 ```
 
 <!--END_DOCUSAURUS_CODE_TABS-->
@@ -303,7 +303,7 @@ const aboutAnchorNode = getByText(/about/i)
 <!--Cypress-->
 
 ```js
-cy.getByText(/about/i).should('exist')
+cy.findByText(/about/i).should('exist')
 ```
 
 <!--END_DOCUSAURUS_CODE_TABS-->
@@ -379,7 +379,7 @@ const incrediblesPosterImg = getByAltText(/incredibles.*? poster/i)
 <!--Cypress-->
 
 ```js
-cy.getByAltText(/incredibles.*? poster/i).should('exist')
+cy.findByAltText(/incredibles.*? poster/i).should('exist')
 ```
 
 <!--END_DOCUSAURUS_CODE_TABS-->
@@ -436,8 +436,8 @@ const closeElement = getByTitle('Close')
 <!--Cypress-->
 
 ```js
-cy.getByTitle('Delete').should('exist')
-cy.getByTitle('Close').should('exist')
+cy.findByTitle('Delete').should('exist')
+cy.findByTitle('Close').should('exist')
 ```
 
 <!--END_DOCUSAURUS_CODE_TABS-->
@@ -493,7 +493,7 @@ const lastNameInput = getByDisplayValue('Norris')
 <!--Cypress-->
 
 ```js
-cy.getByDisplayValue('Norris').should('exist')
+cy.findByDisplayValue('Norris').should('exist')
 ```
 
 <!--END_DOCUSAURUS_CODE_TABS-->
@@ -531,7 +531,7 @@ const messageTextArea = getByDisplayValue('Hello World')
 <!--Cypress-->
 
 ```js
-cy.getByDisplayValue('Hello World').should('exist')
+cy.findByDisplayValue('Hello World').should('exist')
 ```
 
 <!--END_DOCUSAURUS_CODE_TABS-->
@@ -573,7 +573,7 @@ const selectElement = getByDisplayValue('Alaska')
 <!--Cypress-->
 
 ```js
-cy.getByDisplayValue('Alaska').should('exist')
+cy.findByDisplayValue('Alaska').should('exist')
 ```
 
 <!--END_DOCUSAURUS_CODE_TABS-->
@@ -654,7 +654,7 @@ const dialogContainer = getByRole('dialog')
 <!--Cypress-->
 
 ```js
-cy.getByRole('dialog').should('exist')
+cy.findByRole('dialog').should('exist')
 ```
 
 <!--END_DOCUSAURUS_CODE_TABS-->
@@ -704,7 +704,7 @@ const element = getByTestId('custom-element')
 <!--Cypress-->
 
 ```js
-cy.getByTestId('custom-element').should('exist')
+cy.findByTestId('custom-element').should('exist')
 ```
 
 <!--END_DOCUSAURUS_CODE_TABS-->
